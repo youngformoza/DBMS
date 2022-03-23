@@ -118,4 +118,4 @@ __БД статистики:__
 - Среднее число добавлений книги в bookmark по пользователям.
 
 __Макет предполагаемого интерфейса:__
-https://www.figma.com/file/K9Yklk70TmGchl7CDVJ1Bz/Untitled?node-id=0%3A1
+https://www.figma.com/proto/K9Yklk70TmGchl7CDVJ1Bz/Untitled?page-id=0%3A1&node-id=1%3A2&viewport=274%2C48%2C0.5&scaling=contain
