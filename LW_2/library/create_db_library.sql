@@ -76,7 +76,7 @@ CREATE TABLE edition (
 	edition_ISBN VARCHAR(13) NOT NULL,
 	edition_number INT NOT NULL, 
 	edition_publication DATE,
-	edition_lenght INT,
+	edition_length INT,
 	edition_type VARCHAR(4),
 	publisher_id INT NOT NULL,
 	FOREIGN KEY (publisher_id)
