@@ -28,3 +28,10 @@
 
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/library/results/4_1.jpg)
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/library/results/4_2.jpg)
+
+### Пользователи
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/first_request.png)
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/first_result.png)
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/second_request.png)
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/second_result.png)
