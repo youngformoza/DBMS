@@ -14,6 +14,9 @@
 ### Полученная модель базы данных библиотеки
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/library/model_library.png)
 
+### Полученная модель базы данных пользователей
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/db_schema.png)
+
 ## Примеры запросов к базам данных
 
 ### Библиотека
