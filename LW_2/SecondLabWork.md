@@ -34,6 +34,27 @@
 
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/first_result.png)
 
+
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/second_request.png)
 
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/second_result.png)
+
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/third_request.png)
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/third_result.png)
+
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/fourth_request.png)
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/fourth_result.png)
+
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/fifth_request.png)
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/fifth_result.png)
+
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/sixth_request.png)
+
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/sixth_result.png)
