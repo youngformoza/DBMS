@@ -57,4 +57,6 @@
 
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/sixth_request.png)
 
+![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/sixth_fragment.png)
+
 ![avatar](https://github.com/youngformoza/DBMS/blob/main/LW_2/user/results/sixth_result.png)
