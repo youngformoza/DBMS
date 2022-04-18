@@ -10,14 +10,13 @@ using library;
 namespace library.Migrations
 {
     [DbContext(typeof(db_libraryContext))]
-    [Migration("20220416185113_160422_2150")]
-    partial class _160422_2150
+    [Migration("20220418185850_180422_2200")]
+    partial class _180422_2200
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("Relational:Collation", "Russian_Russia.1251")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63)
                 .HasAnnotation("ProductVersion", "5.0.16")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
@@ -30,45 +29,36 @@ namespace library.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<string>("AuthorCountry")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("author_country");
+                        .HasColumnType("text");
 
                     b.Property<string>("AuthorFullname")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("author_fullname");
-
-                    b.Property<int>("AuthorId")
-                        .HasColumnType("integer")
-                        .HasColumnName("author_id");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("author", "sch_library");
+                    b.ToTable("Authors");
                 });
 
             modelBuilder.Entity("library.Entities.AuthorToBook", b =>
                 {
-                    b.Property<int>("AuthorId")
-                        .HasColumnType("integer")
-                        .HasColumnName("author_id");
-
-                    b.Property<int>("BookId")
-                        .HasColumnType("integer")
-                        .HasColumnName("book_id");
-
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("AuthorId")
                         .HasColumnType("integer");
 
-                    b.HasKey("AuthorId", "BookId")
-                        .HasName("author_to_book_pkey");
+                    b.Property<int>("BookId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AuthorId");
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("author_to_book", "sch_library");
+                    b.ToTable("AuthorToBooks");
                 });
 
             modelBuilder.Entity("library.Entities.Book", b =>
@@ -79,43 +69,28 @@ namespace library.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<int?>("BookAgeRestriction")
-                        .HasColumnType("integer")
-                        .HasColumnName("book_age_restriction");
+                        .HasColumnType("integer");
 
                     b.Property<int?>("BookCount")
-                        .HasColumnType("integer")
-                        .HasColumnName("book_count");
+                        .HasColumnType("integer");
 
                     b.Property<string>("BookDescription")
-                        .HasMaxLength(1000)
-                        .HasColumnType("character varying(1000)")
-                        .HasColumnName("book_description");
-
-                    b.Property<int>("BookId")
-                        .HasColumnType("integer")
-                        .HasColumnName("book_id");
+                        .HasColumnType("text");
 
                     b.Property<string>("BookName")
-                        .IsRequired()
-                        .HasMaxLength(1000)
-                        .HasColumnType("character varying(1000)")
-                        .HasColumnName("book_name");
+                        .HasColumnType("text");
 
                     b.Property<int?>("BookmarkId")
-                        .HasColumnType("integer")
-                        .HasColumnName("bookmark_id");
+                        .HasColumnType("integer");
 
                     b.Property<int?>("RatingId")
-                        .HasColumnType("integer")
-                        .HasColumnName("rating_id");
+                        .HasColumnType("integer");
 
                     b.Property<int>("SectionId")
-                        .HasColumnType("integer")
-                        .HasColumnName("section_id");
+                        .HasColumnType("integer");
 
                     b.Property<int>("StatusId")
-                        .HasColumnType("integer")
-                        .HasColumnName("status_id");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -123,7 +98,7 @@ namespace library.Migrations
 
                     b.HasIndex("StatusId");
 
-                    b.ToTable("book", "sch_library");
+                    b.ToTable("Books");
                 });
 
             modelBuilder.Entity("library.Entities.Edition", b =>
@@ -134,39 +109,25 @@ namespace library.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<int>("BookId")
-                        .HasColumnType("integer")
-                        .HasColumnName("book_id");
-
-                    b.Property<int>("EditionId")
-                        .HasColumnType("integer")
-                        .HasColumnName("edition_id");
+                        .HasColumnType("integer");
 
                     b.Property<string>("EditionIsbn")
-                        .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("character varying(13)")
-                        .HasColumnName("edition_isbn");
+                        .HasColumnType("text");
 
                     b.Property<int?>("EditionLength")
-                        .HasColumnType("integer")
-                        .HasColumnName("edition_length");
+                        .HasColumnType("integer");
 
                     b.Property<int>("EditionNumber")
-                        .HasColumnType("integer")
-                        .HasColumnName("edition_number");
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("EditionPublication")
-                        .HasColumnType("date")
-                        .HasColumnName("edition_publication");
+                        .HasColumnType("timestamp without time zone");
 
                     b.Property<string>("EditionType")
-                        .HasMaxLength(4)
-                        .HasColumnType("character varying(4)")
-                        .HasColumnName("edition_type");
+                        .HasColumnType("text");
 
                     b.Property<int>("PublisherId")
-                        .HasColumnType("integer")
-                        .HasColumnName("publisher_id");
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -174,7 +135,7 @@ namespace library.Migrations
 
                     b.HasIndex("PublisherId");
 
-                    b.ToTable("edition", "sch_library");
+                    b.ToTable("Editions");
                 });
 
             modelBuilder.Entity("library.Entities.Genre", b =>
@@ -184,40 +145,34 @@ namespace library.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("GenreId")
-                        .HasColumnType("integer")
-                        .HasColumnName("genre_id");
-
                     b.Property<string>("GenreName")
-                        .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("character varying(20)")
-                        .HasColumnName("genre_name");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("genre", "sch_library");
+                    b.ToTable("Genres");
                 });
 
             modelBuilder.Entity("library.Entities.GenreToBook", b =>
                 {
-                    b.Property<int>("GenreId")
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("genre_id");
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
                     b.Property<int>("BookId")
-                        .HasColumnType("integer")
-                        .HasColumnName("book_id");
-
-                    b.Property<int>("Id")
                         .HasColumnType("integer");
 
-                    b.HasKey("GenreId", "BookId")
-                        .HasName("genre_to_book_pkey");
+                    b.Property<int>("GenreId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("BookId");
 
-                    b.ToTable("genre_to_book", "sch_library");
+                    b.HasIndex("GenreId");
+
+                    b.ToTable("GenreToBooks");
                 });
 
             modelBuilder.Entity("library.Entities.Publisher", b =>
@@ -227,19 +182,12 @@ namespace library.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("PublisherId")
-                        .HasColumnType("integer")
-                        .HasColumnName("publisher_id");
-
                     b.Property<string>("PublisherName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("character varying(100)")
-                        .HasColumnName("publisher_name");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("publisher", "sch_library");
+                    b.ToTable("Publishers");
                 });
 
             modelBuilder.Entity("library.Entities.Section", b =>
@@ -249,19 +197,12 @@ namespace library.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("SectionId")
-                        .HasColumnType("integer")
-                        .HasColumnName("section_id");
-
                     b.Property<string>("SectionName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("section_name");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("section", "sch_library");
+                    b.ToTable("Sections");
                 });
 
             modelBuilder.Entity("library.Entities.Status", b =>
@@ -271,19 +212,12 @@ namespace library.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int>("StatusId")
-                        .HasColumnType("integer")
-                        .HasColumnName("status_id");
-
                     b.Property<string>("StatusName")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("character varying(50)")
-                        .HasColumnName("status_name");
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("status", "sch_library");
+                    b.ToTable("Statuses");
                 });
 
             modelBuilder.Entity("library.Entities.AuthorToBook", b =>
@@ -291,13 +225,13 @@ namespace library.Migrations
                     b.HasOne("library.Entities.Author", "Author")
                         .WithMany("AuthorToBooks")
                         .HasForeignKey("AuthorId")
-                        .HasConstraintName("author_to_book_author_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("library.Entities.Book", "Book")
                         .WithMany("AuthorToBooks")
                         .HasForeignKey("BookId")
-                        .HasConstraintName("author_to_book_book_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
@@ -310,13 +244,13 @@ namespace library.Migrations
                     b.HasOne("library.Entities.Section", "Section")
                         .WithMany("Books")
                         .HasForeignKey("SectionId")
-                        .HasConstraintName("book_section_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("library.Entities.Status", "Status")
                         .WithMany("Books")
                         .HasForeignKey("StatusId")
-                        .HasConstraintName("book_status_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Section");
@@ -329,13 +263,13 @@ namespace library.Migrations
                     b.HasOne("library.Entities.Book", "Book")
                         .WithMany("Editions")
                         .HasForeignKey("BookId")
-                        .HasConstraintName("edition_book_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("library.Entities.Publisher", "Publisher")
                         .WithMany("Editions")
                         .HasForeignKey("PublisherId")
-                        .HasConstraintName("edition_publisher_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Book");
@@ -348,13 +282,13 @@ namespace library.Migrations
                     b.HasOne("library.Entities.Book", "Book")
                         .WithMany("GenreToBooks")
                         .HasForeignKey("BookId")
-                        .HasConstraintName("genre_to_book_book_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("library.Entities.Genre", "Genre")
                         .WithMany("GenreToBooks")
                         .HasForeignKey("GenreId")
-                        .HasConstraintName("genre_to_book_genre_id_fkey")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Book");

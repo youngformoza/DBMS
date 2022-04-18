@@ -32,11 +32,11 @@ namespace library
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("Server=127.0.0.1;Port=5432;User Id=postgres;Password=1234;Database=db_library;");
+                optionsBuilder.UseNpgsql("Server=127.0.0.1;Port=5432;User Id=postgres;Password=1234;Database=db_library_new;");
             }
         }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "Russian_Russia.1251");
 
@@ -44,7 +44,7 @@ namespace library
             {
                 entity.ToTable("author", "sch_library");
 
-                entity.Property(e => e.AuthorId).HasColumnName("author_id");
+                entity.Property(e => e.Id).HasColumnName("author_id");
 
                 entity.Property(e => e.AuthorCountry)
                     .IsRequired()
@@ -234,7 +234,7 @@ namespace library
             });
 
             OnModelCreatingPartial(modelBuilder);
-        }
+        }*/
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }

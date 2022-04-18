@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
 namespace library.Entities
 {
+    [Table("sections")] 
     public partial class Section : BaseEntity
     {
         public Section()
@@ -12,7 +14,7 @@ namespace library.Entities
             Books = new HashSet<Book>();
         }
 
-        public int SectionId { get; set; }
+        [Column("section_name")]
         public string SectionName { get; set; }
 
         public virtual ICollection<Book> Books { get; set; }

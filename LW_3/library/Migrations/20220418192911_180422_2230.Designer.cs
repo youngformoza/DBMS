@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using library;
@@ -9,9 +10,10 @@ using library;
 namespace library.Migrations
 {
     [DbContext(typeof(db_libraryContext))]
-    partial class db_libraryContextModelSnapshot : ModelSnapshot
+    [Migration("20220418192911_180422_2230")]
+    partial class _180422_2230
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 #nullable disable
 
 namespace library.Entities
 {
+    [Table("publishers")]
     public partial class Publisher : BaseEntity
     {
         public Publisher()
@@ -12,7 +14,7 @@ namespace library.Entities
             Editions = new HashSet<Edition>();
         }
 
-        public int PublisherId { get; set; }
+        [Column("publisher_name")]
         public string PublisherName { get; set; }
 
         public virtual ICollection<Edition> Editions { get; set; }
