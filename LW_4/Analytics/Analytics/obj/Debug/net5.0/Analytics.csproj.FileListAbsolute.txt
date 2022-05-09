@@ -1,0 +1,94 @@
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.exe
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.deps.json
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.runtimeconfig.json
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.runtimeconfig.dev.json
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\ref\Analytics.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.pdb
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.csprojAssemblyReference.cache
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.AssemblyInfoInputs.cache
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.AssemblyInfo.cs
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.csproj.CoreCompileInputs.cache
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\ref\Analytics.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.pdb
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.genruntimeconfig.cache
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Analytics.dll.config
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\DnsClient.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\linux\native\libzstd.so
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\osx\native\libzstd.dylib
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Kiryu\Desktop\политех\СУБД\Analytics\Analytics\obj\Debug\net5.0\Analytics.csproj.CopyComplete
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.exe
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.dll.config
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.deps.json
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.runtimeconfig.json
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.runtimeconfig.dev.json
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\ref\Analytics.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Analytics.pdb
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\DnsClient.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Bson.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Driver.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Driver.Core.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\MongoDB.Libmongocrypt.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\SharpCompress.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\System.Security.AccessControl.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\linux\native\libsnappy64.so
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\linux\native\libzstd.so
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\osx\native\libsnappy64.dylib
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\osx\native\libzstd.dylib
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\libzstd.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\snappy32.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\snappy64.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.csproj.AssemblyReference.cache
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.AssemblyInfoInputs.cache
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.AssemblyInfo.cs
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.csproj.CoreCompileInputs.cache
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.csproj.CopyComplete
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\ref\Analytics.dll
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.pdb
+C:\Users\Yulya\Desktop\university\3year\6 term\DBMS\Analytics\Analytics\obj\Debug\net5.0\Analytics.genruntimeconfig.cache
