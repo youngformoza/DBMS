@@ -13,7 +13,8 @@ namespace library.Models.AnalyticsModels
     public class BooksAnalytics
     {
         [BsonId]
-        public ObjectId Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; }
 
         [BsonElement("book_id")]
         public int BookId { get; set; }
