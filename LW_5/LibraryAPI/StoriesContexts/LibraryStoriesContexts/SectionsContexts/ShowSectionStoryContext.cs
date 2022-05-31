@@ -3,13 +3,13 @@ using LibraryAPI.Repositories;
 using MediatR;
 using System.ComponentModel.DataAnnotations;
 
-
-namespace LibraryAPI.StoriesContexts.BooksContexts
+namespace LibraryAPI.StoriesContexts.LibraryStoriesContexts.SectionsContexts
 {
-    public class DeleteBookStoryContext : IRequest<bool>
+    public class ShowSectionStoryContext : IRequest<Section>
     {
         [Required(ErrorMessage = "Не указан Id")]
         public int Id { get; set; }
 
     }
+
 }

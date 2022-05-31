@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using LibraryAPI.Models.BookModels;
 using LibraryAPI.Repositories;
-using LibraryAPI.StoriesContexts.BooksContexts;
+using LibraryAPI.StoriesContexts.LibraryStoriesContexts.BooksContexts;
 using MediatR;
 
 namespace LibraryAPI.Stories.LibraryStories.BookStory

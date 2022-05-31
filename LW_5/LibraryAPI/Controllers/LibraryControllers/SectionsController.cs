@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MediatR;
 using Microsoft.AspNetCore.Http;
-using LibraryAPI.StoriesContexts.SectionsContexts;
+using LibraryAPI.StoriesContexts.LibraryStoriesContexts.SectionsContexts;
 using LibraryAPI.Models.BookModels;
 
 namespace LibraryAPI.Controllers.LibraryControllers

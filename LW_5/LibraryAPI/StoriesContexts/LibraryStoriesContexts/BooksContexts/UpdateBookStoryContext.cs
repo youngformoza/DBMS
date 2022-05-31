@@ -1,13 +1,14 @@
 ﻿using MediatR;
 
-namespace LibraryAPI.StoriesContexts.BooksContexts
+namespace LibraryAPI.StoriesContexts.LibraryStoriesContexts.BooksContexts
 {
-    public class AddBookStoryContext : IRequest<int>
+    public class UpdateBookStoryContext : IRequest<bool>
     {
+        public int Id { get; set; }
         public string BookName { get; set; }
-   
+
         public int? BookCount { get; set; }
-     
+
         public string BookDescription { get; set; }
 
         public int? BookAgeRestriction { get; set; }

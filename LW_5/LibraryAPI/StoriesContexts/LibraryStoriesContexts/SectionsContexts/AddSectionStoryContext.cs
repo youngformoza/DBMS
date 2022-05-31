@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace LibraryAPI.StoriesContexts.SectionsContexts
+namespace LibraryAPI.StoriesContexts.LibraryStoriesContexts.SectionsContexts
 {
     public class AddSectionStoryContext : IRequest<int>
     {

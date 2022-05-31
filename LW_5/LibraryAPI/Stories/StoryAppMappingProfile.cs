@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using LibraryAPI.Models.BookModels;
-using LibraryAPI.StoriesContexts.BooksContexts;
-using LibraryAPI.StoriesContexts.SectionsContexts;
+using LibraryAPI.Models.UserModels;
+using LibraryAPI.StoriesContexts.LibraryStoriesContexts.BooksContexts;
+using LibraryAPI.StoriesContexts.LibraryStoriesContexts.SectionsContexts;
+using LibraryAPI.StoriesContexts.UserStoriesContexts.BookmarkContexts;
+using LibraryAPI.StoriesContexts.UserStoriesContexts.UsersContexts;
 
 namespace LibraryAPI.Stories
 {
@@ -13,6 +16,10 @@ namespace LibraryAPI.Stories
             CreateMap<UpdateBookStoryContext, Book>();
             CreateMap<AddSectionStoryContext, Section>();
             CreateMap<UpdateSectionStoryContext, Section>();
+            CreateMap<AddUserStoryContext, User>();
+            CreateMap<UpdateUserStoryContext, User>();
+            CreateMap<AddBookmarkStoryContext, Bookmark>();
+            CreateMap<UpdateBookmarkStoryContext, Bookmark>();
            
         }
     }

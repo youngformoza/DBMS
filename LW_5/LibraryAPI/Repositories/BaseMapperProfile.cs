@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using LibraryAPI.Models.BookModels;
+using LibraryAPI.Models.UserModels;
 
 namespace LibraryAPI.Repositories
 {
@@ -9,6 +10,8 @@ namespace LibraryAPI.Repositories
         {
             CreateMap<Book, Book>();
             CreateMap<Section, Section>();
+            CreateMap<User, User>();
+            CreateMap<Bookmark, Bookmark>();
         }
     }
 }
