@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sqruTqKHNA1JCAJH8WAplim3ZwR/H+OqktYWJ8wRTbSF9oZYpTsKLlqSdTWMwjI5rC8DZyKxJ6KTUFN94MHsNA==",
+  "dgSpecHash": "DdjbyP9QkKTiQkDgOSdAbX35BbB0FP7xEb9Ob9LUO2mW88AHMbPJi5fdMZjAKddbvqELPsMt2AmYei2G325RvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yulya\\Desktop\\university\\3year\\6 term\\DBMS\\LW_4\\Analytics\\Analytics\\Analytics.csproj",
+  "projectFilePath": "C:\\Users\\Yulya\\Documents\\GitHub\\DBMS\\LW_5\\LW_4\\Analytics\\Analytics\\Analytics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yulya\\.nuget\\packages\\dnsclient\\1.6.0\\dnsclient.1.6.0.nupkg.sha512",
     "C:\\Users\\Yulya\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
@@ -21,7 +21,8 @@
     "C:\\Users\\Yulya\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
     "C:\\Users\\Yulya\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
     "C:\\Users\\Yulya\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
-    "C:\\Users\\Yulya\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Yulya\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Yulya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

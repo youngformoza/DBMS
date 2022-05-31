@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yulya\\Desktop\\university\\3year\\6 term\\DBMS\\LW_4\\Analytics\\Analytics\\Analytics.csproj": {}
+    "C:\\Users\\Yulya\\Documents\\GitHub\\DBMS\\LW_5\\LW_4\\Analytics\\Analytics\\Analytics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yulya\\Desktop\\university\\3year\\6 term\\DBMS\\LW_4\\Analytics\\Analytics\\Analytics.csproj": {
+    "C:\\Users\\Yulya\\Documents\\GitHub\\DBMS\\LW_5\\LW_4\\Analytics\\Analytics\\Analytics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yulya\\Desktop\\university\\3year\\6 term\\DBMS\\LW_4\\Analytics\\Analytics\\Analytics.csproj",
+        "projectUniqueName": "C:\\Users\\Yulya\\Documents\\GitHub\\DBMS\\LW_5\\LW_4\\Analytics\\Analytics\\Analytics.csproj",
         "projectName": "Analytics",
-        "projectPath": "C:\\Users\\Yulya\\Desktop\\university\\3year\\6 term\\DBMS\\LW_4\\Analytics\\Analytics\\Analytics.csproj",
+        "projectPath": "C:\\Users\\Yulya\\Documents\\GitHub\\DBMS\\LW_5\\LW_4\\Analytics\\Analytics\\Analytics.csproj",
         "packagesPath": "C:\\Users\\Yulya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yulya\\Desktop\\university\\3year\\6 term\\DBMS\\LW_4\\Analytics\\Analytics\\obj\\",
+        "outputPath": "C:\\Users\\Yulya\\Documents\\GitHub\\DBMS\\LW_5\\LW_4\\Analytics\\Analytics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -63,12 +63,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

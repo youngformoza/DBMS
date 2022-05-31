@@ -1,5 +1,4 @@
-﻿using library.Entities;
-using library.Models;
+﻿using library.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -65,6 +64,7 @@ namespace library.Repositories
         {
             return await _context.Set<TEntity>().AsNoTracking().ToListAsync();
         }
+
 
         public async Task<TEntity> InsertAsync<TEntity>(TEntity entity) where TEntity : BaseEntity
         {

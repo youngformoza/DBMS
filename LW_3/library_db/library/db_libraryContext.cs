@@ -1,5 +1,5 @@
 ﻿using System;
-using library.Entities;
+using library.Models.BookModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
