@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.ApplicationContexts;
 using LibraryAPI.Models.BookModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.LibraryStoriesContexts.SectionsContexts;
@@ -8,9 +9,9 @@ namespace LibraryAPI.Stories.LibraryStories.SectionStory
 {
     public class DeleteSectionStoryHandler : IRequestHandler<DeleteSectionStoryContext, bool>
     {
-        private readonly ILibraryRepository _repository;
+        private readonly IRepository<DbLibraryContext> _repository;
 
-        public DeleteSectionStoryHandler(ILibraryRepository repository)
+        public DeleteSectionStoryHandler(IRepository<DbLibraryContext> repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

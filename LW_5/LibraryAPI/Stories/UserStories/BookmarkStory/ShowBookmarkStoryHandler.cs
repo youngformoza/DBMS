@@ -1,4 +1,5 @@
-﻿using LibraryAPI.Models.UserModels;
+﻿using LibraryAPI.ApplicationContexts;
+using LibraryAPI.Models.UserModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.UserStoriesContexts.BookmarkContexts;
 using MediatR;
@@ -7,9 +8,9 @@ namespace LibraryAPI.Stories.UserStories.BookmarkStory
 {
     public class ShowBookmarkStoryHandler : IRequestHandler<ShowBookmarkStoryContext, Bookmark>
     {
-        private readonly IUserRepository _repository;
+        private readonly IRepository<DbUserContext> _repository;
 
-        public ShowBookmarkStoryHandler(IUserRepository repository)
+        public ShowBookmarkStoryHandler(IRepository<DbUserContext> repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

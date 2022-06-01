@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryAPI.Stories.UserStories
 {
+    /*
     public class GetUsersByReviewsStory
     {
         private readonly IUserRepository _repository;
@@ -35,4 +36,5 @@ namespace LibraryAPI.Stories.UserStories
             return countReviewsDict;
         }
     }
+    */
 }

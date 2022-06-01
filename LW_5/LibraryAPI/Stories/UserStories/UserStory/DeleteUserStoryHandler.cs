@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.ApplicationContexts;
 using LibraryAPI.Models.UserModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.UserStoriesContexts.UsersContexts;
@@ -8,9 +9,9 @@ namespace LibraryAPI.Stories.UserStories.UserStory
 {
     public class DeleteUserStoryHandler : IRequestHandler<DeleteUserStoryContext, bool>
     {
-        private readonly IUserRepository _repository;
+        private readonly IRepository<DbUserContext> _repository;
 
-        public DeleteUserStoryHandler(IUserRepository repository)
+        public DeleteUserStoryHandler(IRepository<DbUserContext> repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

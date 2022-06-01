@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.Models.AnalyticsModels;
 using LibraryAPI.Models.BookModels;
 using LibraryAPI.Models.UserModels;
 
@@ -12,6 +13,7 @@ namespace LibraryAPI.Repositories
             CreateMap<Section, Section>();
             CreateMap<User, User>();
             CreateMap<Bookmark, Bookmark>();
+            CreateMap<BooksAnalytics, BooksAnalytics>();
         }
     }
 }

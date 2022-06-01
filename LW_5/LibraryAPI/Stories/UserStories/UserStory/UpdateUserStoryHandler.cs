@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.ApplicationContexts;
 using LibraryAPI.Models.UserModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.UserStoriesContexts.UsersContexts;
@@ -8,10 +9,10 @@ namespace LibraryAPI.Stories.UserStories.UserStory
 {
     public class UpdateUserStoryHandler : IRequestHandler<UpdateUserStoryContext, bool>
     {
-        private readonly IUserRepository _repository;
+        private readonly IRepository<DbUserContext> _repository;
         private readonly IMapper _mapper;
 
-        public UpdateUserStoryHandler(IUserRepository repository, IMapper mapper)
+        public UpdateUserStoryHandler(IRepository<DbUserContext> repository, IMapper mapper)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
             _mapper = mapper;

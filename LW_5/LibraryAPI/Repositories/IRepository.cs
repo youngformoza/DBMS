@@ -1,4 +1,5 @@
 ﻿using LibraryAPI.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryAPI.Repositories
 {
-    public interface ILibraryRepository
+    public interface IRepository<TContext> where TContext : DbContext
     {
         public Task<int> InsertAsync<TEntity>(TEntity entity) 
             where TEntity : BaseEntity;

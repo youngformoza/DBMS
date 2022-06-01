@@ -16,6 +16,11 @@ namespace LibraryAPI.ApplicationContexts
         {
         }
 
+        public DbUserContext()
+        {
+
+        }
+
         public virtual DbSet<Bookmark> Bookmarks { get; set; }
         public virtual DbSet<BooksToBookmark> BooksToBookmarks { get; set; }
         public virtual DbSet<Rating> Ratings { get; set; }

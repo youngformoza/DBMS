@@ -10,9 +10,10 @@ namespace LibraryAPI.Stories.LibraryStories
 {
     public class GetBooksToGenresStory
     {
-        private readonly IUserRepository _repository;
+        /*
+        private readonly IRepository _repository;
 
-        public GetBooksToGenresStory(IUserRepository repository)
+        public GetBooksToGenresStory(IRepository repository)
         {
             _repository = repository;
         }
@@ -34,6 +35,7 @@ namespace LibraryAPI.Stories.LibraryStories
 
             return countGenresDict;
         }
+        */
         
     }
 }

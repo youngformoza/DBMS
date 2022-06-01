@@ -15,6 +15,11 @@ namespace LibraryAPI.ApplicationContexts
         {
         }
 
+        public DbLibraryContext()
+        {
+                
+        }
+
         public virtual DbSet<Author> Authors { get; set; }
         public virtual DbSet<AuthorToBook> AuthorToBooks { get; set; }
         public virtual DbSet<Book> Books { get; set; }

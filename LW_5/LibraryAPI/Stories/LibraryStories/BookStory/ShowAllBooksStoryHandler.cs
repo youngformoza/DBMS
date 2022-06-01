@@ -1,4 +1,5 @@
-﻿using LibraryAPI.Models.BookModels;
+﻿using LibraryAPI.ApplicationContexts;
+using LibraryAPI.Models.BookModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.LibraryStoriesContexts.BooksContexts;
 using MediatR;
@@ -7,9 +8,9 @@ namespace LibraryAPI.Stories.LibraryStories.BookStory
 {
     public class ShowAllBooksStoryHandler : IRequestHandler<ShowAllBooksStoryContext, List<Book>>
     {
-        private readonly ILibraryRepository _repository;
+        private readonly IRepository<DbLibraryContext> _repository;
 
-        public ShowAllBooksStoryHandler(ILibraryRepository repository)
+        public ShowAllBooksStoryHandler(IRepository<DbLibraryContext> repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

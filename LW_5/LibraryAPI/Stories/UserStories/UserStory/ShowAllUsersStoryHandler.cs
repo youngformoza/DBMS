@@ -1,4 +1,5 @@
-﻿using LibraryAPI.Models.UserModels;
+﻿using LibraryAPI.ApplicationContexts;
+using LibraryAPI.Models.UserModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.UserStoriesContexts.UsersContexts;
 using MediatR;
@@ -7,9 +8,9 @@ namespace LibraryAPI.Stories.UserStories.UserStory
 {
     public class ShowAllUsersStoryHandler : IRequestHandler<ShowAllUsersStoryContext, List<User>>
     {
-        private readonly IUserRepository _repository;
+        private readonly IRepository<DbUserContext> _repository;
 
-        public ShowAllUsersStoryHandler(IUserRepository repository)
+        public ShowAllUsersStoryHandler(IRepository<DbUserContext> repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

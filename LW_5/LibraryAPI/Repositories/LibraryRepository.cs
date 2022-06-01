@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace LibraryAPI.Repositories
 {
-    public class LibraryRepository : ILibraryRepository, IDisposable
+    public class LibraryRepository<TContext> : IRepository<TContext>, IDisposable where TContext : DbContext
     {
         private readonly DbLibraryContext _context;
         private bool disposed = false;

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.ApplicationContexts;
 using LibraryAPI.Models.UserModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.UserStoriesContexts.BookmarkContexts;
@@ -8,9 +9,9 @@ namespace LibraryAPI.Stories.UserStories.BookmarkStory
 {
     public class DeleteBookmarkStoryHandler : IRequestHandler<DeleteBookmarkStoryContext, bool>
     {
-        private readonly IUserRepository _repository;
+        private readonly IRepository<DbUserContext> _repository;
 
-        public DeleteBookmarkStoryHandler(IUserRepository repository)
+        public DeleteBookmarkStoryHandler(IRepository<DbUserContext> repository)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
         }

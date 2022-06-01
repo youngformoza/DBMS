@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.ApplicationContexts;
 using LibraryAPI.Models.BookModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.LibraryStoriesContexts.SectionsContexts;
@@ -8,10 +9,10 @@ namespace LibraryAPI.Stories.LibraryStories.SectionStory
 {
     public class AddSectionStoryHandler : IRequestHandler<AddSectionStoryContext, int>
     {
-        private readonly ILibraryRepository _repository;
+        private readonly IRepository<DbLibraryContext> _repository;
         private readonly IMapper _mapper;
 
-        public AddSectionStoryHandler(ILibraryRepository repository, IMapper mapper)
+        public AddSectionStoryHandler(IRepository<DbLibraryContext> repository, IMapper mapper)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
             _mapper = mapper;

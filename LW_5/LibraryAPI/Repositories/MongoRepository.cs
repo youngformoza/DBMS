@@ -25,11 +25,11 @@ namespace LibraryAPI.Repositories
             _collection = Db.GetCollection<BooksAnalytics>("Book");
         }
 
-        public async Task<BooksAnalytics> InsertAsync(BooksAnalytics record)
+        public async Task<string> InsertAsync(BooksAnalytics record)
         {
             await _collection.InsertOneAsync(record);
 
-            return record;
+            return record.Id;
         }
 
         public async Task<List<BooksAnalytics>> GetAllAsync()

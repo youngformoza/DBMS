@@ -10,7 +10,7 @@ namespace LibraryAPI.Repositories
 {
     public interface IMongoRepository
     {
-        public Task<BooksAnalytics> InsertAsync(BooksAnalytics record);
+        public Task<string> InsertAsync(BooksAnalytics record);
 
         public Task<List<BooksAnalytics>> GetAllAsync();
 

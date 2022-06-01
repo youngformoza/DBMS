@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using LibraryAPI.ApplicationContexts;
 using LibraryAPI.Models.BookModels;
 using LibraryAPI.Repositories;
 using LibraryAPI.StoriesContexts.LibraryStoriesContexts.BooksContexts;
@@ -8,10 +9,10 @@ namespace LibraryAPI.Stories.LibraryStories.BookStory
 {
     public class AddBookStoryHandler : IRequestHandler<AddBookStoryContext, int>
     {
-        private readonly ILibraryRepository _repository;
+        private readonly IRepository<DbLibraryContext> _repository;
         private readonly IMapper _mapper;
 
-        public AddBookStoryHandler(ILibraryRepository repository, IMapper mapper)
+        public AddBookStoryHandler(IRepository<DbLibraryContext> repository, IMapper mapper)
         {
             _repository = repository ?? throw new ArgumentNullException(nameof(repository));
             _mapper = mapper;

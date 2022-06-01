@@ -15,19 +15,25 @@ class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
-
+         
         builder.Services.AddHttpClient();
         builder.Services.AddControllers();
         builder.Services.AddMvc();
-        builder.Services.AddTransient(typeof(DbLibraryContext))
-           .AddTransient(typeof(ILibraryRepository), typeof(LibraryRepository))
+        builder.Services.AddSingleton(typeof(DbLibraryContext))
+           .AddSingleton(typeof(IRepository<DbLibraryContext>), typeof(LibraryRepository<DbLibraryContext>))
            .AddDbContextPool<DbLibraryContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("PostgresSQL")));
         
-        builder.Services.AddTransient(typeof(DbUserContext))
-           .AddTransient(typeof(IUserRepository), typeof(UserRepository))
+        builder.Services.AddSingleton(typeof(DbUserContext))
+           .AddSingleton(typeof(IRepository<DbUserContext>), typeof(UserRepository<DbUserContext>))
            .AddDbContextPool<DbUserContext>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("MsSQL")));
-        
-       builder.Services
+
+        builder.Services.AddSingleton(typeof(DbAnalyticsSettings))
+           .AddSingleton(typeof(IMongoRepository), typeof(MongoRepository));
+
+        builder.Services.Configure<DbAnalyticsSettings>(
+            builder.Configuration.GetSection("MongoDbSettings"));
+
+        builder.Services
             .AddAutoMapper(typeof(BaseMapperProfile))
             .AddAutoMapper(typeof(StoryAppMappingProfile));
 
